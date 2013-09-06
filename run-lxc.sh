@@ -115,6 +115,8 @@ export WORKSPACE=\$HOME/workspace
 
 export JOB=$JOB
 
+export TEST_SPEC=$TEST_SPEC
+
 cd \$HOME/workspace
 
 for script in \`ls jenkins/\$JOB/* | grep -e "\/[0-9]\{3\}_"\`; do
