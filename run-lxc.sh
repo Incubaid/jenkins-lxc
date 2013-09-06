@@ -115,7 +115,8 @@ export WORKSPACE=\$HOME/workspace
 
 export JOB=$JOB
 
-export TEST_SPEC=$TEST_SPEC
+export TEST_SPEC=${TEST_SPEC-""}
+test -z \${TEST_SPEC} && unset TEST_SPEC
 
 cd \$HOME/workspace
 
